@@ -5,25 +5,25 @@ const orResult = document.getElementById('orResult');
 const xorResult = document.getElementById('xorResult');
 
 function updateResults() {
-    const a = check1.checked; // true = marcado, false = no marcado
+    const a = check1.checked; 
     const b = check2.checked;
 
-    // AND: "Solo es true si ambas casillas están marcadas"
-    const and = a && b; // True solo si a y b son true
+
+    const and = a && b; 
     andResult.textContent = and ? 'True' : 'False';
     andResult.className = and ? 'true' : 'false';
 
-    // OR: "Es true si al menos una casilla está marcada"
-    const or = a || b; // True si a o b (o ambos) son true
+
+    const or = a || b; 
     orResult.textContent = or ? 'True' : 'False';
     orResult.className = or ? 'true' : 'false';
 
-    // XOR: "Es true si solo una casilla está marcada, pero false si ambas o ninguna lo están"
-    const xor = a !== b; // True si a y b son diferentes (uno true, otro false)
+
+    const xor = a !== b; 
     xorResult.textContent = xor ? 'True' : 'False';
     xorResult.className = xor ? 'true' : 'false';
 
-    // Verificación en consola para cumplir tus directrices
+
     console.log(`Casilla 1: ${a}, Casilla 2: ${b}`);
     console.log(`AND (ambas marcadas): ${and}`);
     console.log(`OR (al menos una marcada): ${or}`);
