@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Lógico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Formulario Lógico</h2>
+        <form id="logicForm">
+            <div class="checkbox-group">
+                <input type="checkbox" id="check1" name="check1">
+                <label for="check1">Casilla 1</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="check2" name="check2">
+                <label for="check2">Casilla 2</label>
+            </div>
+        </form>
+        <div class="results" id="results">
+            <p>AND: <span id="andResult">-</span></p>
+            <p>OR: <span id="orResult">-</span></p>
+            <p>XOR: <span id="xorResult">-</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
